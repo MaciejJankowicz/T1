@@ -36,7 +36,7 @@ namespace T1
             do
             {
                 returnedSymbol = SR.GetNextSymbol();
-                Console.WriteLine(string.Format("typ: {0} zawartość: {1}",returnedSymbol.type.Type, returnedSymbol.content));
+                Console.WriteLine(string.Format("typ: {0} -> zawartość: {1}",returnedSymbol.type.Type, returnedSymbol.content));
             } while (returnedSymbol.type.Type != "błąd" && returnedSymbol.type.Type != "koniec");
 
             Console.ReadKey();

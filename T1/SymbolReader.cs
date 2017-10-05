@@ -20,7 +20,7 @@ namespace T1
     public class SymbolReader
     {
         public static SymbolType[] MatchTypes = new[] {
-            new SymbolType {Type = "identyfikator",Regex = @"^[^\W_]+$"},
+            new SymbolType {Type = "identyfikator",Regex = @"^[a-zA-Z][^\W_]*$"},
             new SymbolType {Type = "int",Regex = @"^\d+$"},
             new SymbolType {Type = "float",Regex = @"^\d+\.\d+$"},
             new SymbolType {Type = "plus",Regex = @"^\+$"},
